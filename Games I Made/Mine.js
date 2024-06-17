@@ -26,7 +26,8 @@ const blockIDs = {
   "rgb(125, 231, 5)": "Leaves",
   "rgb(66, 41, 26)": "Trunks",
   "green": "Grass",
-  "rgb(101, 67, 33)": "Dirt"
+  "rgb(101, 67, 33)": "Dirt",
+  "rgb(211, 211, 211)": "Stone"
 }
 
 function inventoryAddItem(item){
@@ -190,6 +191,11 @@ function terrainCreate(rows,columns){
         leavesStart = leavesStart - columns
       }
   }
+   // Fill bottom 4 rows with stone
+   for (let i = (rows - 4) * columns + 1; i <= rows * columns; i++) {
+    document.getElementById("_" + i).style.backgroundColor = "rgb(211, 211, 211)"; // Light grey color for Stone
+  }
+
 }
 
 let startTimeTable = performance.now()
