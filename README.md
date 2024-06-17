@@ -1,2 +1,2 @@
 # RandomGames
-Random coded games I find or create
+Random coded games I find and/or create
