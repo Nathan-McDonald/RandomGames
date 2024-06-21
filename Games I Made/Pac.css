@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+#score {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(20, 40px);
+    grid-template-rows: repeat(20, 40px);
+    gap: 1px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border: 1px solid #333;
+}
+
+.pacman {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.block {
+    background-color: blue;
+}
+
+.dot {
+    background-color: white;
+    border-radius: 75%;
+}
+
+.square.layout2 {
+    background-color: #ffcccb; /* Light pink background for layout2 */
+}
+
+.layout2 .block {
+    background-color: purple; /* Purple blocks for layout2 */
+}
+
+.layout2 .dot {
+    background-color: #ffd700; /* Gold dots for layout2 */
+}
