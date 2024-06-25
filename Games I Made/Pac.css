@@ -41,14 +41,34 @@ body {
     border-radius: 50%;
 }
 
+.ghost {
+    background-color: red; /* Example: Red ghost color */
+    border-radius: 50%;
+    z-index: 0; /* Ensure the ghost is above dots */
+    position: relative; /* Ensure z-index works */
+}
+
+.ghost2 {
+    background-color: blue; /* Example: Blue ghost color */
+    border-radius: 50%;
+    z-index: 1; /* Ensure the ghost is above dots */
+    position: relative; /* Ensure z-index works */
+}
 .block {
     background-color: blue;
 }
 
 .dot {
     background-color: white;
-    border-radius: 75%;
+    border-radius: 50%; /* Ensures dots are circular */
+    width: 10px; /* Adjust size of the dot */
+    height: 10px; /* Adjust size of the dot */
+    margin: auto; /* Center the dot within its square */
+    position: relative; /* Ensure z-index works */
+    z-index: 0; /* Ensure dots are below ghost */
 }
+
+
 
 .square.layout2 {
     background-color: #ffcccb; /* Light pink background for layout2 */
@@ -59,5 +79,5 @@ body {
 }
 
 .layout2 .dot {
-    background-color: #ebdb81; /* Gold dots for layout2 */
+    background-color: #ffffff; /* Gold dots for layout2 */
 }
